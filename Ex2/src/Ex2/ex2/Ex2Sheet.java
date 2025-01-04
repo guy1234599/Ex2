@@ -40,7 +40,7 @@ public class Ex2Sheet implements Sheet {
     @Override
     public Cell get(String cords) {
         Cell ans = null;
-        // Add your code here
+        // מזיר את התא במקום הxy
 
         /////////////////////
         return ans;
@@ -58,14 +58,14 @@ public class Ex2Sheet implements Sheet {
     public void set(int x, int y, String s) {
         Cell c = new SCell(s);
         table[x][y] = c;
-        // Add your code here
+        // לעדכן את התא במקום xy
 
         /////////////////////
     }
     @Override
     public void eval() {
         int[][] dd = depth();
-        // Add your code here
+        // לחשב את כל התאים שיש בטבלה
 
         // ///////////////////
     }
@@ -73,16 +73,17 @@ public class Ex2Sheet implements Sheet {
     @Override
     public boolean isIn(int xx, int yy) {
         boolean ans = xx>=0 && yy>=0;
-        // Add your code here
+        if(xx>26||yy>99){
+            return  false;
+        }
 
-        /////////////////////
         return ans;
     }
 
     @Override
     public int[][] depth() {
         int[][] ans = new int[width()][height()];
-        // Add your code here
+        // לחשב את העומק קודם
 
         // ///////////////////
         return ans;
@@ -106,7 +107,7 @@ public class Ex2Sheet implements Sheet {
     public String eval(int x, int y) {
         String ans = null;
         if(get(x,y)!=null) {ans = get(x,y).toString();}
-        // Add your code here
+        // לחשב תא ספיציפי
 
         /////////////////////
         return ans;

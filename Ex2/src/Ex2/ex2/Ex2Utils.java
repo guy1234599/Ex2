@@ -14,7 +14,7 @@ public class Ex2Utils {
     public static final double EPS1 = 0.001, EPS2=EPS1*EPS1, EPS=EPS2, PEN_RADIUS = 0.001;
     public static final double GUI_X_SPACE = 2, GUI_X_START = 3, GUI_Y_TEXT_START = 0.4;
     public static final boolean Debug = false;
-    public static final String[] M_OPS = {"+", "-", "*", "/"};
+    public static final char[] M_OPS = {'+','-','*','/'};
     public static final String EMPTY_CELL = "";
     public static  final String[] ABC= {"A","B","C","D","E","F","G","H","I","J","K","L","O","M","N","P","Q","R","S","T","U","V","W","X","Y","Z"};
 
